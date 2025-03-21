@@ -8,40 +8,45 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <div class="left-column">
-      <h1>Confidential Funds Name Generator</h1>
-      <p>Alamin kung ano dapat ang pangalan mo upang makatanggap ng confidential funds ni Sarah Duterte:</p>
-      <form id="birthday-form">
-        <label for="month"><i class="fas fa-calendar-alt"></i> Month:</label>
-        <select id="month" name="month" required>
-          <option value="1">January</option>
-          <option value="2">February</option>
-          <option value="3">March</option>
-          <option value="4">April</option>
-          <option value="5">May</option>
-          <option value="6">June</option>
-          <option value="7">July</option>
-          <option value="8">August</option>
-          <option value="9">September</option>
-          <option value="10">October</option>
-          <option value="11">November</option>
-          <option value="12">December</option>
-        </select>
+  <div class="page-wrapper">
+    <div class="container">
+      <div class="left-column">
+        <h1>Confidential Funds Name Generator</h1>
+        <p>Alamin kung ano dapat ang pangalan mo upang makatanggap ng confidential funds ni Sarah Duterte:</p>
+        <form id="birthday-form">
+          <label for="month"><i class="fas fa-calendar-alt"></i> Month:</label>
+          <select id="month" name="month" required>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
 
-        <label for="day"><i class="fas fa-calendar-day"></i> Day:</label>
-        <input type="number" id="day" name="day" min="1" max="31" placeholder="Enter day" required>
+          <label for="day"><i class="fas fa-calendar-day"></i> Day:</label>
+          <input type="number" id="day" name="day" min="1" max="31" placeholder="Enter day" required>
 
-        <button type="submit"><i class="fas fa-magic"></i>Generate Name</button>
-      </form>
-      <button id="dice-button"><i class="fas fa-dice"></i>Random Name</button>
-    </div>
-    <div class="right-column" id="right-column">
-      <p id="result-container" class="hidden">Ikaw si: <span id="result"></span></p>
-      <div id="image-container" class="hidden">
-        <img id="random-image" src="" alt="Random Image">
+          <button type="submit"><i class="fas fa-magic"></i>Generate Name</button>
+        </form>
+        <button id="dice-button"><i class="fas fa-dice"></i>Random Name</button>
+      </div>
+      <div class="right-column" id="right-column">
+        <p id="result-container" class="hidden">Ikaw si: <span id="result"></span></p>
+        <div id="image-container" class="hidden">
+          <img id="random-image" src="" alt="Random Image">
+        </div>
       </div>
     </div>
+    <footer class="footer">
+      <p>&copy; 2025 Confidential Funds Name Generator. All rights reserved.<br>Images are taken from google search while background is AI-generated using Adobe Firefly.</p>
+    </footer>
   </div>
   <script src="script.js"></script>
 </body>
